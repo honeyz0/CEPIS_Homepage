@@ -1,0 +1,19 @@
+/* Global */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    color: #404040;
+    background-color: #f4f5f7;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
