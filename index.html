@@ -5,27 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG CEPIS - Juan Gabriel</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">ONG CEPIS</div>
+        <div class="logo"><img src="images/CEPIS_logo.png" height="100"></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Início</a></li>
             <li><a href="#sobre">Quem Somos</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a>Inscrição</a></li>
+            <li><a>Seja um voluntário</a></li>
+            <li><a href="#contato">Fale Conosco</a></li>
+        </ul>
+         <ul class="nav-links">
             <li><a href="#" class="btn-doe">Doe Agora</a></li>
         </ul>
     </nav>
 
-    <header id="home" class="hero">
+    <header id="home" class="hero-slider swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: linear-gradient(rgba(0,86,179,0.3), rgba(0,86,179,0.7)), url('images/img1.jpg');"></div>
+            <div class="swiper-slide" style="background-image: linear-gradient(rgba(0,86,179,0.2), rgba(0,86,179,0.7)), url('images/img2.jpeg');"></div>
+        </div>
+
         <div class="hero-content">
             <h1>Primeira ONG de autismo em Macaé</h1>
             <p>Fazemos a triagem especializada para laudo precoce de crianças até 7 anos.</p>
             <a href="#sobre" class="btn-main">Conheça nosso projeto</a>
         </div>
+
+        <div class="swiper-button-prev slider-btn"></div>
+        <div class="swiper-button-next slider-btn"></div>
     </header>
 
     <section id="sobre" class="section">
