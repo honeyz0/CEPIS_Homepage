@@ -51,16 +51,24 @@ body{
 
 .btn-doe {
     background: #ffcc00;
-    padding: 1rem 2rem;
+    padding: 1.2rem 4rem;
     border-radius: 0.5rem;
     color: #000 !important;
+    text-transform: uppercase;
 }
+
+.btn-doe:hover {
+    background: #6f6f6f;
+    color: #ffffff !important;
+    transition: 0.4s;
+}
+
 
 /* Hero Section */
 .hero-slider {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -86,7 +94,7 @@ body{
 .hero-content * { pointer-events: auto; } /* Reativa cliques nos botões */
 
 .hero-content h1 {
-    font-size: 5.57rem; 
+    font-size: 6.68rem; 
     text-transform: uppercase;
     margin-bottom: 1.4rem;
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
@@ -121,12 +129,35 @@ body{
 }
 
 /* Seções */
-.section {
+section {
     padding: 8rem 10%;
     text-align: center;
 }
 
-.bg-light { background: #f4f4f4; }
+section h2{
+    font-size: 4.78rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+section h3 {
+    text-transform: uppercase; 
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.section_quem-somos img {
+    width: 100rem;
+    margin-bottom: 5rem;
+}
+
+.section_quem-somos h3{
+    font-size: 3.98rem;
+}
+
+.bg-light { background: #f4f4f4e7; }
+.bg-light2 { background: #fafafae7; }
 
 .container { max-width: 110rem; margin: auto; }
 
@@ -134,6 +165,8 @@ body{
     display: flex;
     gap: 2rem;
     margin-top: 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -142,6 +175,25 @@ body{
     background: #fff;
     border-radius: 1rem;
     box-shadow: 0 0.4rem 0.6rem rgba(0,0,0,0.1);
+}
+
+.card-doar{
+    flex: 1;
+    min-width: 25rem;
+    max-width: 35rem;
+    height: 45rem;
+    overflow: hidden;
+    background: none;
+    
+}
+
+.card-doar img{
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 .grid-equipe {
