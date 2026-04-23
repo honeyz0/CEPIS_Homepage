@@ -147,13 +147,34 @@ section h3 {
     margin-bottom: 2rem;
 }
 
+hr {
+    border: none;
+    height: 0.2rem;
+    left: 50%;
+    width: 15rem;
+    margin: 4rem auto;
+    background: #ff5722 !important;
+}
+
 .section_quem-somos img {
     width: 100rem;
     margin-bottom: 5rem;
 }
 
 .section_quem-somos h3{
-    font-size: 3.98rem;
+    font-size: 3.62rem;
+}
+
+.card h3{
+    font-size: 2.76rem;
+}
+
+.section_quem-somos .card{
+    background-image: url(../images/backmissao.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 60px 30px 110px 30px;
+    color: #fff;
 }
 
 .bg-light { background: #f4f4f4e7; }
@@ -179,7 +200,7 @@ section h3 {
 
 .card-doar{
     flex: 1;
-    min-width: 25rem;
+    min-width: 20rem;
     max-width: 35rem;
     height: 45rem;
     overflow: hidden;
@@ -204,15 +225,99 @@ section h3 {
 }
 
 .membro {
-    background: #fff;
+    background: transparent;
     padding: 2rem;
-    border-bottom: 0.4rem solid #0056b3;
 }
+
+.membro img{
+    border-radius: 100%;
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+
+.membro p{
+    font-size: 1.6rem;
+
+}
+
+.funcionario img{
+    border-radius: 100%;
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+
+.membro .stg{
+    font-weight: bold;
+    font-size: 1.9rem !important;
+}
+
+.funcionario p{
+   font-size: 1.4rem;
+}
+
+.funcionario .stg{
+    font-weight: bold;
+    font-size: 1.5rem !important;
+}
+
+.grid-depoimentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.box-depoimento {
+    background: #fff;
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    text-align: start;
+    border-radius: 0 5rem;
+    font-style: italic;
+}
+
+.box-depoimento img{
+    border-radius: 100%;
+    width: 2.5rem;
+
+}
+
+.box-depoimento .stg{
+    font-weight: bold;
+    font-size: 1.6rem !important;
+    margin-bottom: 0.5rem;
+}
+
+.who-is{
+    font-size: 1.3rem;
+}
+
+.box_depoimentos_pessoas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box_depoimentos_pessoas p{
+    margin: 0;
+    line-height: 1.1;
+}
+
+.image_depoimentos{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 1.8rem;
+
+}
+
+
 
 footer {
     padding: 2rem;
     background: #0056b3;
     color: white;
     text-align: center;
+    font-size: 1.2rem;
 }
 
