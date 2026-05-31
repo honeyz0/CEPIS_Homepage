@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,430 +10,543 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://www.juicer.io/embed/ongdeautismo-br/embed-code.js" async defer></script>
 </head>
+
 <body>
-
-    <nav class="navbar">
-        <div class="logo"><img src="images/CEPIS_logo.png" height="100"></div>
-        <ul class="nav-links">
-            <li><a href="#home">Início</a></li>
-            <li><a href="#sobre">Quem Somos</a></li>
-            <li><a>Inscrição</a></li>
-            <li><a>Seja um voluntário</a></li>
-            <li><a href="">Notícias</a></li>
-            <li><a href="#contato">Fale Conosco</a></li>
-        </ul>
-         <ul class="nav-links">
-            <li><a href="#" class="btn-doe">Doe Agora</a></li>
-        </ul>
-    </nav>
-
-    <header id="home" class="hero-slider swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: linear-gradient(rgba(0,86,179,0.3), rgba(0,86,179,0.7)), url('images/img1.jpg');"></div>
-            <div class="swiper-slide" style="background-image: linear-gradient(rgba(0,86,179,0.2), rgba(0,86,179,0.7)), url('images/img2.jpeg');"></div>
-        </div>
-
-        <div class="hero-content">
-            <h1>Primeira ONG de autismo em Macaé</h1>
-            <p>Fazemos a triagem especializada para laudo precoce de crianças a partir de 1 ano e 8 meses.</p>
-            <a href="#sobre" class="btn-main">Conheça nosso projeto</a>
-        </div>
-
-        <div class="swiper-button-prev slider-btn"></div>
-        <div class="swiper-button-next slider-btn"></div>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="images/CEPIS_logo.png" height="100" alt="Logo CEPIS"></div>
+            <!-- Um único container para os links facilitando o controle -->
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#inscricao" class="page-link">Inscrição</a></li>
+                    <li><a href="#voluntario" class="page-link">Seja um voluntário</a></li>
+                    <li><a href="#noticias" class="page-link">Notícias</a></li>
+                    <li><a href="#fale-conosco" class="page-link">Fale Conosco</a></li>
+                    <li><a href="#doe-agora" class="page-link btn-doe">Doe Agora</a></li>
+                </ul>
+            </div>
+            <!-- Botão Hambúrguer para Mobile -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
     </header>
 
-    <section id="sobre" class="section section_quem-somos">
-        <div class="container">
-            <h2>Nosso Projeto</h2>
-            <p>
-            A ONG CEPIS Juan Gabriel (Centro de Estimulação Precoce e Integração Social Juan Gabriel), fundada em 08
-            de março de 2020, é uma organização sem fins lucrativos, <b>reconhecida como utilidade pública municipal</b>
-            desde 2022 e <b>recentemente reconhecida como utilidade pública estadual</b>. O principal objetivo do CEPIS é
-            promover o desenvolvimento integral de crianças a partir de 1 ano e 8 meses até a adolescência e adultos
-            com transtornos do neurodesenvolvimento e sem plano de saúde, por meio de <b>
-                ações nas áreas da saúde,
-                educação e assistência social
-            </b>. A instituição atua como suporte ao SUS, atendendo transtornos gerais e
-            associados – mas principalmente, <b>
-                realizando avaliação, investigação e rastreio para laudo precoce do
-                autismo
-            </b> – <i>um serviço que o SUS não oferece</i>. Além do diagnóstico, a ONG oferece terapias com psicólogos,
-            psicopedagogos, neuropsicopedagogos e nutricionistas, promovendo o desenvolvimento do paciente e a
-            inclusão social. Também realiza ações de educação e conscientização, fortalecendo os direitos de pessoas
-            com transtornos globais e associados.
-            </p>
-            <hr/>
-            <div class="cards">
-                <img src="images/img3.jpeg" alt="">
-            </div>
-            
-            <h3>Nossos Valores Fundamentais</h3>
-            <p >A ONG CEPIS Juan Gabriel foi criada por Marina Frouche com o propósito de realizar avaliações terapêuticas voltadas ao diagnóstico precoce de crianças com possíveis sinais do Transtorno do Espectro Autista.</p>
-            <p>Por trás de cada ação, existem valores que nos guiam e fortalecem nosso compromisso com a inclusão, o cuidado e a transformação de vidas.</p>
-            <hr/>
-            <div class="cards">
-                <div class="card">
-                    <h3>Missão</h3>
-                    <p>Fazer a triagem qualificada para que as crianças sejam diagnosticadas em curto prazo e busquem tratamento precoce com um laudo especificando o tratamento.</p>
+    <!--Página Principal-->
+    <section id="view-home" class="page-view main-padding">
+        <section id="view-homehome" class="hero-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background-image: linear-gradient(rgba(0,86,179,0.3), rgba(0,86,179,0.7)), url('images/img1.jpg');">
                 </div>
-                <div class="card">
-                    <h3>Visão</h3>
-                    <p>Dar continuidade após o laudo, prestando um atendimento qualificado na intervenção precoce, como rede de apoio do SUS. TUDO EM UM SÓ LUGAR ESSE É NOSSO LEMA</p>
-                </div>
-                <div class="card">
-                    <h3>Propósito</h3>
-                    <p>Promover o desenvolvimento e a inclusão de crianças por meio do cuidado especializado e do diagnóstico precoce, contribuindo para a transformação de vidas e o fortalecimento das famílias.</p>
+                <div class="swiper-slide"
+                    style="background-image: linear-gradient(rgba(0,86,179,0.2), rgba(0,86,179,0.7)), url('images/img2.jpeg');">
                 </div>
             </div>
-        </div>
-    </section>
-
-    
-    <section class="bg-light2">
+            <div class="hero-content">
+                <h1>Primeira ONG de autismo em Macaé</h1>
+                <p>Fazemos a triagem especializada para laudo precoce de crianças a partir de 1 ano e 8 meses.</p>
+                <a href="#sobre" class="btn-main">Conheça nosso projeto</a>
+            </div>
+            <div class="swiper-button-prev slider-btn"></div>
+            <div class="swiper-button-next slider-btn"></div>
+        </section>
+        <section id="sobre" class="section section_quem-somos">
             <div class="container">
-                <h2>Doar é Virtude</h2>
-                <p>Cada criança autista é um pequeno guerreiro enfrentando desafios únicos em sua jornada. Mas com amor, compaixão e caridade, podemos ajudá-los a superar essas barreiras e alcançar seus sonhos. Cada ato de amor e solidariedade que oferecemos a eles é uma semente de esperança que plantamos em seus corações, e essa esperança é capaz de florescer em milagres. Quando nos conectamos com a humanidade, nos tornamos mais empáticos e inspirados a agir para tornar o mundo um lugar melhor para todos. Junte-se a nós nesta jornada de amor e ajude a transformar a vida dessas crianças e suas famílias.</p>
-            </div>
-            <hr/>
-            <div class="cards">
-                <div class="card-doar">
-                    <img src="/images/Juanz1.jpg" alt="" >        
+                <h2>Nosso Projeto</h2>
+                <p>
+                    A ONG CEPIS Juan Gabriel (Centro de Estimulação Precoce e Integração Social Juan Gabriel), fundada
+                    em 08
+                    de março de 2020, é uma organização sem fins lucrativos, <b>reconhecida como utilidade pública
+                        municipal</b>
+                    desde 2022 e <b>recentemente reconhecida como utilidade pública estadual</b>. O principal objetivo
+                    do
+                    CEPIS é
+                    promover o desenvolvimento integral de crianças a partir de 1 ano e 8 meses até a adolescência e
+                    adultos
+                    com transtornos do neurodesenvolvimento e sem plano de saúde, por meio de <b>
+                        ações nas áreas da saúde,
+                        educação e assistência social
+                    </b>. A instituição atua como suporte ao SUS, atendendo transtornos gerais e
+                    associados – mas principalmente, <b>
+                        realizando avaliação, investigação e rastreio para laudo precoce do
+                        autismo
+                    </b> – <i>um serviço que o SUS não oferece</i>. Além do diagnóstico, a ONG oferece terapias com
+                    psicólogos,
+                    psicopedagogos, neuropsicopedagogos e nutricionistas, promovendo o desenvolvimento do paciente e a
+                    inclusão social. Também realiza ações de educação e conscientização, fortalecendo os direitos de
+                    pessoas
+                    com transtornos globais e associados.
+                </p>
+                <hr />
+                <div class="cards">
+                    <img src="images/img3.jpeg" alt="">
                 </div>
-                <div class="card-doar">
-                    <img src="/images/Juanz2.png" alt="" >        
-                </div>
-                <div class="card-doar">
-                    <img src="/images/Juanz3.jpg" alt="" >        
-                </div>
-            </div>
-             <div class="cards">
-                <div class="card-doar">
-                    <img src="/images/child (2).jpeg" alt="" >        
-                </div>
-                <div class="card-doar">
-                    <img src="/images/child (4).jpeg" alt="" >        
-                </div>
-                <div class="card-doar">
-                    <img src="/images/child (5).jpeg" alt="" >        
+                <h3>Nossos Valores Fundamentais</h3>
+                <p>A ONG CEPIS Juan Gabriel foi criada por Marina Frouche com o propósito de realizar avaliações
+                    terapêuticas voltadas ao diagnóstico precoce de crianças com possíveis sinais do Transtorno do
+                    Espectro
+                    Autista.</p>
+                <p>Por trás de cada ação, existem valores que nos guiam e fortalecem nosso compromisso com a inclusão, o
+                    cuidado e a transformação de vidas.</p>
+                <hr />
+                <div class="cards">
+                    <div class="card">
+                        <h3>Missão</h3>
+                        <p>Fazer a triagem qualificada para que as crianças sejam diagnosticadas em curto prazo e
+                            busquem
+                            tratamento precoce com um laudo especificando o tratamento.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Visão</h3>
+                        <p>Dar continuidade após o laudo, prestando um atendimento qualificado na intervenção precoce,
+                            como
+                            rede de apoio do SUS. TUDO EM UM SÓ LUGAR ESSE É NOSSO LEMA</p>
+                    </div>
+                    <div class="card">
+                        <h3>Propósito</h3>
+                        <p>Promover o desenvolvimento e a inclusão de crianças por meio do cuidado especializado e do
+                            diagnóstico precoce, contribuindo para a transformação de vidas e o fortalecimento das
+                            famílias.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
-
-
-    <section id="equipe" class="bg-light">
-        <div class="container">
-            <h2>Nossa Equipe</h2>
-            <hr/>
-            <div class="grid-equipe">
-                <div class="membro">
-                    <img src="images/Funcionarios/Marina Frouche.png" alt="">
-                    <p class="stg">Marina Frouche</p>
-                    <p>Fundadora</p>
+        <section class="bg-light2">
+            <div class="container">
+                <h2>Doar é Virtude</h2>
+                <p>Cada criança autista é um pequeno guerreiro enfrentando desafios únicos em sua jornada. Mas com amor,
+                    compaixão e caridade, podemos ajudá-los a superar essas barreiras e alcançar seus sonhos. Cada ato
+                    de
+                    amor e solidariedade que oferecemos a eles é uma semente de esperança que plantamos em seus
+                    corações, e
+                    essa esperança é capaz de florescer em milagres. Quando nos conectamos com a humanidade, nos
+                    tornamos
+                    mais empáticos e inspirados a agir para tornar o mundo um lugar melhor para todos. Junte-se a nós
+                    nesta
+                    jornada de amor e ajude a transformar a vida dessas crianças e suas famílias.</p>
+            </div>
+            <hr />
+            <div class="cards">
+                <div class="card-doar">
+                    <img src="/images/Juanz1.jpg" alt="">
                 </div>
-                <div class="membro">
-                    <img src="images/Funcionarios/Juan Catano.png" alt="">
-                    <p class="stg">Juan Cataño Aybar</p>
-                    <p>Diretor Presidente</p>
+                <div class="card-doar">
+                    <img src="/images/Juanz2.png" alt="">
                 </div>
-                <div class="membro">
-                    <img src="images/Funcionarios/Jairo Rodrigues.jpg" alt="">
-                    <p class="stg">Jairo Rodrigues</p>
-                    <p>Tesoureiro</p>
-                </div>
-                 <div class="membro">
-                    <img src="images/Funcionarios/Marim Felipe.jpg" alt=>
-                    <p class="stg">Marim Felipe</p>
-                    <p>Secretário</p>
+                <div class="card-doar">
+                    <img src="/images/Juanz3.jpg" alt="">
                 </div>
             </div>
+            <div class="cards">
+                <div class="card-doar">
+                    <img src="/images/child (2).jpeg" alt="">
+                </div>
+                <div class="card-doar">
+                    <img src="/images/child (4).jpeg" alt="">
+                </div>
+                <div class="card-doar">
+                    <img src="/images/child (5).jpeg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="equipe" class="bg-light">
+            <div class="container">
+                <h2>Nossa Equipe</h2>
+                <hr />
+                <div class="grid-equipe">
+                    <div class="membro">
+                        <img src="images/Funcionarios/Marina Frouche.png" alt="">
+                        <p class="stg">Marina Frouche</p>
+                        <p>Fundadora</p>
+                    </div>
+                    <div class="membro">
+                        <img src="images/Funcionarios/Juan Catano.png" alt="">
+                        <p class="stg">Juan Cataño Aybar</p>
+                        <p>Diretor Presidente</p>
+                    </div>
+                    <div class="membro">
+                        <img src="images/Funcionarios/Jairo Rodrigues.jpg" alt="">
+                        <p class="stg">Jairo Rodrigues</p>
+                        <p>Tesoureiro</p>
+                    </div>
+                    <div class="membro">
+                        <img src="images/Funcionarios/Marim Felipe.jpg" alt=>
+                        <p class="stg">Marim Felipe</p>
+                        <p>Secretário</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="equipe" class="bg-light">
+            <div class="container">
+                <h2>Nosso Time de Voluntários</h2>
+                <hr />
+                <div class="grid-equipe">
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Marina Frouche.png" alt="">
+                        <p class="stg">Marina Frouche</p>
+                        <p>Neuropsicopedagoga e Psicanalista</p>
+                    </div>
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Juliana Caldeira.jpeg" alt="">
+                        <p class="stg">Juliana Caldeira</p>
+                        <p>Coordenadora ADM e Assistente terapêutica</p>
+                    </div>
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Renata Benevento.jpeg" alt="">
+                        <p class="stg">Renata Benevento</p>
+                        <p>Psicóloga e Psicanalista</p>
+                    </div>
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Dr Livia Lobo.jpg" alt="">
+                        <p class="stg">Lívia Lobo</p>
+                        <p>Neurologista Infantil</p>
+                    </div>
+                </div>
+                <div class="grid-equipe">
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Milena Melo.jpg" alt="">
+                        <p class="stg">Milena Melo</p>
+                        <p>Enfermeira Neonatologista e Pediatra com atuação em Eletroencefalografia (EEG)</p>
+                    </div>
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Ana Lidia Faria.jpg" alt="">
+                        <p class="stg">Ana Lídia Faria</p>
+                        <p>Assistente Social</p>
+                    </div>
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Nayara Dutra.jpeg" alt="">
+                        <p class="stg">Nayara Dutra</p>
+                        <p>Assistente Social e Psicanalista</p>
+                    </div>
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Karine Lima.jpeg" alt="">
+                        <p class="stg">Karine Lima</p>
+                        <p>Nutricionista</p>
+                    </div>
+                </div>
+                <div class="grid-equipe">
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Marita Mello.jpeg" alt="">
+                        <p class="stg">Marita Sabbatino</p>
+                        <p>Nutricionista</p>
+                    </div>
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Dr Filipe de Luca.jpeg" alt="">
+                        <p class="stg">Filipe de Luca</p>
+                        <p>Advogado especialista em BPC LOAS</p>
+                    </div>
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Dr André Coelho.jpeg" alt="">
+                        <p class="stg">André Coelho</p>
+                        <p>Advogado especialista em Direito da Pessoa Com Deficiência</p>
+                    </div>
+                    <div class="membro funcionario">
+                        <img src="images/Funcionarios/Victor Gabriel.jpeg" alt="">
+                        <p class="stg">Victor Gabriel</p>
+                        <p>Produtor Cultural</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="" class="bg-light2">
+            <div class="container">
+                <h2>Depoimentos</h2>
+                <p>Palavras que inspiram, alguns depoimentos de quem já foi impactado pelo nosso projeto.</p>
+                <hr />
+                <div class="grid-depoimentos">
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Monique</p>
+                                <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"Hoje, graças a ONG de autismo CEPIS Juan Gabriel, tenho conseguido apoio em avaliação e
+                            diagnóstico para minha
+                            filha. Sou muito grata a eles!"</p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Renata</p>
+                                <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"Moisés nunca esteve em uma consulta voltada para ele com um olhar atento de um profissional
+                            por
+                            50 minutos. A
+                            chegada é emocionante. Nossas crianças precisam desse olhar, desse apoio. Precisam dessa
+                            chance
+                            como todas as
+                            outras crianças"</p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Carol</p>
+                                <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"Essa ONG tem sido benção para todos nós, os profissionais tão carinhosos e de uma empatia...
+                            vocês são luz."</p>
+                    </div>
+                </div>
+                <div class="grid-depoimentos">
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Raquel</p>
+                                <p class="who-is">-</p>
+                            </div>
+                        </div>
+                        <p>"É muito gratificante ver pessoas ativas que se importam e possibilitam acesso a muitos que
+                            não
+                            tem condições de
+                            recorrer a um atendimento particular"</p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Luana</p>
+                                <p class="who-is">Voluntária da ONG</p>
+                            </div>
+                        </div>
+                        <p>"O tratamento precoce que a ONG propõe é fundamental para crianças dentro do espectro
+                            autista."
+                        </p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Aline</p>
+                                <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"Vocês querem saber o que o grupo significa para mim? Significa ESPERANÇA pois sem esperança
+                            não
+                            vivemos..."</p>
+                    </div>
+                </div>
+                <div class="grid-depoimentos">
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Tatyana</p>
+                                <p class="who-is">Voluntária da ONG</p>
+                            </div>
+                        </div>
+                        <p>"A ONG CEPIS é uma das organizações que tem em sua missão, impactar e empoderar famílias e
+                            crianças especiais,
+                            ajudando-as em seu desenvolvimento, devolvendo-lhes a dignidade, dando-lhes esperança"</p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Thais</p>
+                                <p class="who-is">Voluntária e mãe de uma das crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"Nesse grupo sou acolhida, informada sobre os direitos da minha filha e apoiada nos meus dias
+                            mais difíceis pois
+                            encontro mães como eu, passando pelas mesmas dificuldades de lidar com o TEA"</p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Anna</p>
+                                <p class="who-is">Assistente Terapêutica Voluntária e mãe de uma das crianças atendidas
+                                    pela
+                                    ONG</p>
+                            </div>
+                        </div>
+                        <p>"Nesse grupo somos acolhedoras e acolhidas, trocamos vivências, experiências e informações
+                            para
+                            visar sempre o
+                            melhor para nossas crianças. Considero o trabalho da ONG fantástico e há um tempo dedico
+                            parte
+                            do meu tempo
+                            para acolher, orientar e auxiliar mães / responsáveis a fim de amenizar os comportamentos e
+                            inseguranças associados ao diagnóstico do TEA."</p>
+                    </div>
+                </div>
+                <div class="grid-depoimentos">
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Nathália</p>
+                                <p class="who-is">Engenheira Química e mãe de 3 crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"...Em meio a avalanche do diagnóstico de 3 filhos com autismo, necessidade de tratamento
+                            deles,
+                            e o desgaste do
+                            dia a dia, eu Nathália me vi sobrecarregada, sem apoio. Foi quando conheci a ONG CEPIS
+                            (Centro
+                            de Estimulação
+                            Precoce e Integração Sensorial Juan Gabriel), uma rede de apoio de mães, com profissionais
+                            capacitadas que nos
+                            auxiliam em conhecimento, para que possamos minimizar os impactos em nosso dia a dia e
+                            tornar o
+                            maternar mais
+                            leve, diante das dificuldades enfrentadas por nossas crianças.
+                            É muito gratificante ver que tem pessoas que se importam e possibilitam acesso daqueles que
+                            não
+                            tem condições de
+                            recorrer um atendimento por meios particulares."</p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Jamile</p>
+                                <p class="who-is">Psicóloga Voluntária e mãe de uma das crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"A intervenção precoce é o melhor procedimento para propiciar um melhor desenvolvimento da
+                            criança pois sabemos
+                            e diversos estudos já comprovaram que quanto mais cedo se iniciam as intervenções adequadas,
+                            melhor é o
+                            prognóstico. Eu, enquanto voluntária, espero que a ONG CEPIS seja reconhecida pelo excelente
+                            trabalho quem vem
+                            realizando com estas famílias, receba apoio necessário, pois esse projeto não pode parar! As
+                            famílias têm pressa, o
+                            tempo perdido não volta. A evolução e desenvolvimento dos nossos filhos não são negociáveis,
+                            mas
+                            essenciais para
+                            terem uma melhor qualidade de vida"</p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Iasmin</p>
+                                <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"A ONG CEPIS tem feito um lindo trabalho com várias crianças e mães, eu e meu filho fazemos
+                            parte
+                            disso. Eu estava
+                            perdida e sem nenhuma ajuda da minha família e quando recorri ao SUS, me deparei com uma
+                            longa
+                            fila de espera
+                            onde só atrasou o diagnóstico e desenvolvimento do meu filho. A ONG me acolheu e me ofereceu
+                            apoio, depois
+                            abraçaram meu filho, dando a ele a possibilidade de ter uma avaliação com profissionais
+                            voluntárias maravilhosas."</p>
+                    </div>
+                </div>
+                <div class="grid-depoimentos">
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Samara</p>
+                                <p class="who-is">-</p>
+                            </div>
+                        </div>
+                        <p>"Tudo isso acontecendo graças a @ongcepisjuangabriel, sou muito grata a esses anjos que estão
+                            fazendo acontecer.
+                            Obrigada de coração!"</p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Monique</p>
+                                <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"Você nem imaginam o tamanho da minha alegria por estar tendo essa força da ong, peço a Deus
+                            que
+                            retribua em
+                            dobro, pelo que todos estão fazendo por cada um de nós. Gratidão!"</p>
+                    </div>
+                    <div class="box-depoimento">
+                        <div class="image_depoimentos">
+                            <img src="images/icon_pessoa.png" alt="">
+                            <div class="box_depoimentos_pessoas">
+                                <p class="stg">Simone</p>
+                                <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
+                            </div>
+                        </div>
+                        <p>"Muita gratidão a Marina e Thais que através da ong estão sempre nos dando apoio e ajudando
+                            nossos filhos. Que
+                            essa seja a primeira conquista de muitas bençãos que estão por vir."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Página de Inscrição -->
+    <section id="view-inscricao" class="page-view" style="display: none;">
+        <div class="container" style="padding: 12rem 10% 8rem 10%;">
+            <h2>Inscrições para Triagem</h2>
+            <p>Preencha os dados da criança para entrar na fila de triagem especializada do laudo precoce.</p>
+            <!-- Aqui você pode construir um formulário profissional futuramente -->
         </div>
     </section>
 
-
-    <section id="equipe" class="bg-light">
-        <div class="container">
-            <h2>Nosso Time de Voluntários</h2>
-            <hr/>
-            <div class="grid-equipe">
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Marina Frouche.png" alt="">
-                    <p class="stg">Marina Frouche</p>
-                    <p>Neuropsicopedagoga e Psicanalista</p>
-                </div>
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Juliana Caldeira.jpeg" alt="">
-                    <p class="stg">Juliana Caldeira</p>
-                    <p>Coordenadora ADM e Assistente terapêutica</p>
-                </div>
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Renata Benevento.jpeg" alt="">
-                    <p class="stg">Renata Benevento</p>
-                    <p>Psicóloga e Psicanalista</p>
-                </div>
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Dr Livia Lobo.jpg" alt="">
-                    <p class="stg">Lívia Lobo</p>
-                    <p>Neurologista Infantil</p>
-                </div>
-            </div>
-            <div class="grid-equipe"> 
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Milena Melo.png" alt="">
-                    <p class="stg">Milena Melo</p>
-                    <p>Exame Eletroencefalograma</p>
-                </div>
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Ana Lidia Faria.jpg" alt="">
-                    <p class="stg">Ana Lídia Faria</p>
-                    <p>Assistente Social</p>
-                </div>
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Nayara Dutra.jpeg" alt="">
-                    <p class="stg">Nayara Dutra</p>
-                    <p>Assistente Social e Psicanalista</p>
-                </div>
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Karine Lima.jpeg" alt="">
-                    <p class="stg">Karine Lima</p>
-                    <p>Nutricionista</p>
-                </div>
-            </div>
-            <div class="grid-equipe"> 
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Marita Mello.jpeg" alt="">
-                    <p class="stg">Marita Sabbatino</p>
-                    <p>Nutricionista</p>
-                </div>
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Dr Filipe de Luca.jpeg" alt="">
-                    <p class="stg">Filipe de Luca</p>
-                    <p>Advogado especialista em BPC LOAS</p>
-                </div>
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Dr André Coelho.jpeg" alt="">
-                    <p class="stg">André Coelho</p>
-                    <p>Advogado especialista em Direito da Pessoa Com Deficiência</p>
-                </div>
-                <div class="membro funcionario">
-                    <img src="images/Funcionarios/Victor Gabriel.jpeg" alt="">
-                    <p class="stg">Victor Gabriel</p>
-                    <p>Produtor Cultural</p>
-                </div>
-            </div>
+    <!-- Página de Voluntariado -->
+    <section id="view-voluntario" class="page-view" style="display: none;">
+        <div class="container" style="padding: 12rem 10% 8rem 10%;">
+            <h2>Seja um Voluntário</h2>
+            <p>Junte-se ao nosso time técnico ou administrativo e ajude a transformar vidas em Macaé.</p>
         </div>
     </section>
 
-    <section id="" class="bg-light2">
-        <div class="container">
-            <h2>Depoimentos</h2>
-            <p>Palavras que inspiram, alguns depoimentos de quem já foi impactado pelo nosso projeto.</p>
-            <hr/>
-            <div class="grid-depoimentos">
-                 <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Monique</p>
-                            <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"Hoje, graças a ONG de autismo CEPIS Juan Gabriel, tenho conseguido apoio em avaliação e diagnóstico para minha
-                    filha. Sou muito grata a eles!"</p>
-                </div>
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Renata</p>
-                            <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"Moisés nunca esteve em uma consulta voltada para ele com um olhar atento de um profissional por 50 minutos. A
-                    chegada é emocionante. Nossas crianças precisam desse olhar, desse apoio. Precisam dessa chance como todas as
-                    outras crianças"</p>
-                </div>
-                     <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png"alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Carol</p>
-                            <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"Essa ONG tem sido benção para todos nós, os profissionais tão carinhosos e de uma empatia... vocês são luz."</p>
-                </div>
-            </div>
-
-            <div class="grid-depoimentos">
-                
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Raquel</p>
-                            <p class="who-is">-</p>
-                        </div>
-                    </div>
-                    <p>"É muito gratificante ver pessoas ativas que se importam e possibilitam acesso a muitos que não tem condições de
-                    recorrer a um atendimento particular"</p>
-                </div>
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Luana</p>
-                            <p class="who-is">Voluntária da ONG</p>
-                        </div>
-                    </div>
-                    <p>"O tratamento precoce que a ONG propõe é fundamental para crianças dentro do espectro autista."</p>
-                </div>
-                  <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Aline</p>
-                            <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"Vocês querem saber o que o grupo significa para mim? Significa ESPERANÇA pois sem esperança não vivemos..."</p>
-                </div>
-            </div>
-
-
-
-            <div class="grid-depoimentos">
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Tatyana</p>
-                            <p class="who-is">Voluntária da ONG</p>
-                        </div>
-                    </div>
-                    <p>"A ONG CEPIS é uma das organizações que tem em sua missão, impactar e empoderar famílias e crianças especiais,
-                    ajudando-as em seu desenvolvimento, devolvendo-lhes a dignidade, dando-lhes esperança"</p>
-                </div>
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png"alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Thais</p>
-                            <p class="who-is">Voluntária e mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"Nesse grupo sou acolhida, informada sobre os direitos da minha filha e apoiada nos meus dias mais difíceis pois
-                    encontro mães como eu, passando pelas mesmas dificuldades de lidar com o TEA"</p>
-                </div>
-                 <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Anna</p>
-                            <p class="who-is">Assistente Terapêutica Voluntária e mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"Nesse grupo somos acolhedoras e acolhidas, trocamos vivências, experiências e informações para visar sempre o
-                    melhor para nossas crianças. Considero o trabalho da ONG fantástico e há um tempo dedico parte do meu tempo
-                    para acolher, orientar e auxiliar mães / responsáveis a fim de amenizar os comportamentos e inseguranças associados ao diagnóstico do TEA."</p>
-                </div>
-            </div>
-
-
-
-            <div class="grid-depoimentos">
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Nathália</p>
-                            <p class="who-is">Engenheira Química e mãe de 3 crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"...Em meio a avalanche do diagnóstico de 3 filhos com autismo, necessidade de tratamento deles, e o desgaste do
-                    dia a dia, eu Nathália me vi sobrecarregada, sem apoio. Foi quando conheci a ONG CEPIS (Centro de Estimulação
-                    Precoce e Integração Sensorial Juan Gabriel), uma rede de apoio de mães, com profissionais capacitadas que nos
-                    auxiliam em conhecimento, para que possamos minimizar os impactos em nosso dia a dia e tornar o maternar mais
-                    leve, diante das dificuldades enfrentadas por nossas crianças.
-                    É muito gratificante ver que tem pessoas que se importam e possibilitam acesso daqueles que não tem condições de
-                    recorrer um atendimento por meios particulares."</p>
-                </div>
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png"alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Jamile</p>
-                            <p class="who-is">Psicóloga Voluntária e mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"A intervenção precoce é o melhor procedimento para propiciar um melhor desenvolvimento da criança pois sabemos
-                    e diversos estudos já comprovaram que quanto mais cedo se iniciam as intervenções adequadas, melhor é o
-                    prognóstico. Eu, enquanto voluntária, espero que a ONG CEPIS seja reconhecida pelo excelente trabalho quem vem
-                    realizando com estas famílias, receba apoio necessário, pois esse projeto não pode parar! As famílias têm pressa, o
-                    tempo perdido não volta. A evolução e desenvolvimento dos nossos filhos não são negociáveis, mas essenciais para
-                    terem uma melhor qualidade de vida"</p>
-                </div>
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Iasmin</p>
-                            <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"A ONG CEPIS tem feito um lindo trabalho com várias crianças e mães, eu e meu filho fazemos parte disso. Eu estava
-                    perdida e sem nenhuma ajuda da minha família e quando recorri ao SUS, me deparei com uma longa fila de espera
-                    onde só atrasou o diagnóstico e desenvolvimento do meu filho. A ONG me acolheu e me ofereceu apoio, depois
-                    abraçaram meu filho, dando a ele a possibilidade de ter uma avaliação com profissionais voluntárias maravilhosas."</p>
-                </div>
-            </div>
-
-
-
-            <div class="grid-depoimentos">
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Samara</p>
-                            <p class="who-is">-</p>
-                        </div>
-                    </div>
-                    <p>"Tudo isso acontecendo graças a @ongcepisjuangabriel, sou muito grata a esses anjos que estão fazendo acontecer.
-                    Obrigada de coração!"</p>
-                </div>
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Monique</p>
-                            <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"Você nem imaginam o tamanho da minha alegria por estar tendo essa força da ong, peço a Deus que retribua em
-                    dobro, pelo que todos estão fazendo por cada um de nós. Gratidão!"</p>
-                </div>
-                <div class="box-depoimento">
-                    <div class="image_depoimentos">
-                        <img src="images/icon_pessoa.png" alt="">
-                        <div class="box_depoimentos_pessoas">
-                            <p class="stg">Simone</p>
-                            <p class="who-is">Mãe de uma das crianças atendidas pela ONG</p>
-                        </div>
-                    </div>
-                    <p>"Muita gratidão a Marina e Thais que através da ong estão sempre nos dando apoio e ajudando nossos filhos. Que
-                    essa seja a primeira conquista de muitas bençãos que estão por vir."</p>
-                </div>
-            </div>
+    <!-- Página de Notícias -->
+    <section id="view-noticias" class="page-view" style="display: none;">
+        <div class="container container-noticias">
+            <h2>Notícias e Eventos</h2>
+            <p>Fique por dentro das últimas ações e conquistas da ONG CEPIS Juan Gabriel.</p>
+            <iframe 
+                src="https://www.juicer.io/api/feeds/ongdeautismo-br/iframe" 
+                frameborder="0"  
+                class="noticias-juicer"
+                title="ongdeautismo.br - Juicer social media feed">
+            </iframe>
         </div>
     </section>
 
+    <!-- Página de Fale Conosco -->
+    <section id="view-fale-conosco" class="page-view" style="display: none;">
+        <div class="container" style="padding: 12rem 10% 8rem 10%;">
+            <h2>Fale Conosco</h2>
+            <p>Gostaria de tirar dúvidas? Fale conosco.</p>
+        </div>
+    </section>
+
+    <!-- Página de Doe Agora -->
+    <section id="view-doe-agora" class="page-view" style="display: none;">
+        <div class="container" style="padding: 12rem 10% 8rem 10%;">
+            <h2>Doe Agora</h2>
+            <p>Sua doação vale muito.</p>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2026 ONG CEPIS - Todos os direitos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
+
 </html>

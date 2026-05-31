@@ -65,6 +65,12 @@ body{
 
 
 /* Hero Section */
+
+.main-padding{
+    margin: 0;
+    padding: 0;
+}
+
 .hero-slider {
     position: relative;
     width: 100%;
@@ -311,6 +317,36 @@ hr {
 
 }
 
+/*Página de Inscrição*/
+
+
+
+
+/*Página de Notícias*/
+
+.container-noticias {
+    max-width: 200rem !important; 
+    width: 95%;
+}
+
+.noticias-juicer{
+    display:block; 
+    margin:2rem auto; 
+    width:100%;  
+    min-height:50rem; 
+    border: none;
+}
+
+#view-noticias {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+#view-noticias h2 {
+    margin-top: 3rem;
+}
+
+
 
 
 footer {
@@ -321,3 +357,80 @@ footer {
     font-size: 1.2rem;
 }
 
+
+/* --- Responsividade da Navbar --- */
+
+/* Esconde o botão hambúrguer no desktop */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    z-index: 1100;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #0056b3;
+    transition: 0.3s;
+}
+
+/* Media Query para Telas Mobiles */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 1rem 5%;
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostra o botão no mobile */
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Esconde o menu para a direita */
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background: #fff;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: 0.4s ease-in-out;
+        padding: 12rem 3rem 3rem 3rem;
+        z-index: 1050;
+    }
+
+    /* Classe que o JS vai injetar para abrir o menu */
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+    }
+
+    .nav-links a {
+        font-size: 2.2rem;
+        display: block;
+    }
+
+    /* Efeito de rotação das linhas do hambúrguer quando ativo */
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
