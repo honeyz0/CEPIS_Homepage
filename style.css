@@ -388,9 +388,16 @@ footer {
 
     .menu-toggle {
         display: flex;
-        position: fixed;     /* Ele passa a flutuar baseado na tela inteira */
-        top: 2.5rem;        
-        right: 5%;         
+        flex-direction: column;
+        gap: 6px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 1rem;
+        
+        position: fixed;    
+        top: 2.5rem;       
+        right: 5%;          
         z-index: 100005 !important; 
         transition: transform 0.3s ease, right 0.4s ease-in-out;
     }
@@ -398,26 +405,27 @@ footer {
     .nav-menu {
         position: fixed;
         top: 0;
-        right: 0;               
+        right: 0;
         width: 80%;
-        max-width: 30rem;     
+        max-width: 30rem;
         height: 100vh;
         background: #fff;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.15);
-        padding: 12rem 3zem 3rem 3rem;
-        z-index: 100000 !important;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        transition: 0.4s ease-in-out;
+        padding: 12rem 3rem 3rem 3rem;
+        z-index: 10000;
 
-        
-        opacity: 0;
+        opacity: 0;     
         visibility: hidden;
-        transform: translateX(100%); 
-        transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out, visibility 0.4s;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s;
     }
 
+    /* Classe que o JS vai injetar para abrir o menu */
     .nav-menu.active {
-        opacity: 1; 
+        opacity: 1;  
         visibility: visible;
-        transform: translateX(0); 
+        transform: translateX(0);
     }
 
     .nav-links {
@@ -434,8 +442,10 @@ footer {
         display: block;
     }
 
+    /* Efeito de rotação das linhas do hambúrguer quando ativo */
+
     .menu-toggle.active{
-        right: 2rem;
+        right: 2rem; 
         position: fixed;
     }
 
@@ -443,7 +453,6 @@ footer {
         background-color: #0056b3;
     }
 
-    /* Efeito de rotação das linhas do hambúrguer quando ativo */
     .menu-toggle.active span:nth-child(1) {
         transform: rotate(45deg) translate(6px, 6px);
     }
@@ -453,4 +462,4 @@ footer {
     .menu-toggle.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -7px);
     }
- }
+}
