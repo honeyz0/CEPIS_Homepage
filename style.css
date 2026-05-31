@@ -393,20 +393,20 @@ footer {
     .nav-menu {
         position: fixed;
         top: 0;
-        right: -100%; /* Esconde o menu para a direita */
-        width: 80%;
+        right: -100vw; /* Esconde o menu para a direita */
+        width: 80vw;
         max-width: 300px;
         height: 100vh;
         background: #fff;
         box-shadow: -5px 0 15px rgba(0,0,0,0.1);
         transition: 0.4s ease-in-out;
         padding: 12rem 3rem 3rem 3rem;
-        z-index: 1050;
+        z-index: 10000 !important;
     }
 
     /* Classe que o JS vai injetar para abrir o menu */
     .nav-menu.active {
-        right: 0;
+        right: 0 !important;
     }
 
     .nav-links {
