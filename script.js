@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const linkText = link.textContent.toLowerCase();
 
             if(linkText.includes('inscrição')) switchView('inscricao');
-            if(linkText.includes('voluntário')) switchView('voluntario');
+            if(linkText.includes('prêmios')) switchView('premios');
             if(linkText.includes('notícias')) switchView('noticias');
             if(linkText.includes('fale conosco')) switchView('fale-conosco');
             if(linkText.includes('doe agora')) switchView('doe-agora');

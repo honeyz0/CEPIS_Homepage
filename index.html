@@ -22,8 +22,8 @@
                 <ul class="nav-links">
                     <li><a href="#home">Início</a></li>
                     <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#premios" class="page-link">Prêmios e Certificações</a></li>
                     <li><a href="#inscricao" class="page-link">Inscrição</a></li>
-                    <li><a href="#voluntario" class="page-link">Seja um voluntário</a></li>
                     <li><a href="#noticias" class="page-link">Notícias</a></li>
                     <li><a href="#fale-conosco" class="page-link">Fale Conosco</a></li>
                     <li><a href="#doe-agora" class="page-link btn-doe">Doe Agora</a></li>
@@ -497,20 +497,195 @@
         </section>
     </section>
 
-    <!-- Página de Inscrição -->
-    <section id="view-inscricao" class="page-view" style="display: none;">
-        <div class="container" style="padding: 12rem 10% 8rem 10%;">
-            <h2>Inscrições para Triagem</h2>
-            <p>Preencha os dados da criança para entrar na fila de triagem especializada do laudo precoce.</p>
-            <!-- Aqui você pode construir um formulário profissional futuramente -->
+    <!-- Página de Inscrição e Voluntariado -->
+   <section id="view-inscricao" class="page-view" style="display: none;">
+        <div class="flex-formularios-container">
+            <!--Forms 1-->
+            <div class="bloco-form">
+                <h2>Inscrições para Triagem</h2>
+                <p>Inscreva a criança para triagem especializada do laudo precoce.</p>
+                
+                <form class="formulario-ong efeito-subir" style="transition-delay: 0.2s;">
+                    <div class="grupo-formulario-row">
+                        <div class="campo-formulario">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario-row">
+                        <div class="campo-formulario">
+                            <label for="cadunico">Cadastro Único (CadÚnico)</label>
+                            <input type="text" id="cadunico" name="cadunico" placeholder="Digite o número do NIS">
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="cpf">CPF</label>
+                            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario-row">
+                        <div class="campo-formulario">
+                            <label for="celular">Contato de Celular</label>
+                            <input type="tel" id="celular" name="celular" placeholder="(22) 99999-9999" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="email">E-mail de Contato</label>
+                            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-enviar-formulario">Enviar Cadastro</button>
+                </form>
+            </div>
+
+            <!--Forms 2-->
+            <div class="bloco-form">
+                <h2>Seja um Voluntário</h2>
+                <p>Junte-se ao nosso time e ajude a transformar vidas em Macaé.</p>
+                
+                <form class="formulario-ong efeito-subir" style="transition-delay: 0.4s;">
+                    <div class="grupo-formulario-row">
+                        <div class="campo-formulario">
+                            <label for="nome-voluntario">Nome</label>
+                            <input type="text" id="nome-voluntario" name="nome" placeholder="Digite seu primeiro nome" required>
+                        </div>
+                        
+                        <div class="campo-formulario">
+                            <label for="sobrenome-voluntario">Sobrenome</label>
+                            <input type="text" id="sobrenome-voluntario" name="sobrenome" placeholder="Digite seu sobrenome" required>
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario-row">
+                        <div class="campo-formulario">
+                            <label for="cpf-voluntario">CPF</label>
+                            <input type="text" id="cpf-voluntario" name="cpf" placeholder="000.000.000-00" required>
+                        </div>
+
+                        <div class="campo-formulario">
+                            <label for="celular-voluntario">Contato de Celular</label>
+                            <input type="tel" id="celular-voluntario" name="celular" placeholder="(22) 99999-9999" required>
+                        </div>
+                    </div>
+
+                    <div class="grupo-formulario-row">
+                        <div class="campo-formulario">
+                            <label for="email-voluntario">E-mail de Contato</label>
+                            <input type="email" id="email-voluntario" name="email" placeholder="exemplo@email.com" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-enviar-formulario">Enviar Cadastro</button>
+                </form>
+            </div>
+
         </div>
     </section>
 
-    <!-- Página de Voluntariado -->
-    <section id="view-voluntario" class="page-view" style="display: none;">
-        <div class="container" style="padding: 12rem 10% 8rem 10%;">
-            <h2>Seja um Voluntário</h2>
-            <p>Junte-se ao nosso time técnico ou administrativo e ajude a transformar vidas em Macaé.</p>
+    <!-- Página de Certificações -->
+    <section id="view-premios" class="page-view" style="display: none;">
+        <div class="container" style="padding: 4rem 2% 8rem 2%;">
+            <h2>Registros, Prêmios e Certificações</h2>
+            <div class="box-certificacoes">
+                <div class="image_certificacoes efeito-subir">
+                    <img src="images/Reconhecimentos/CEBAS.jpg" alt="CEBAS">
+                </div>
+                <div class="certificacoes_tipo efeito-subir">
+                    <p class="stg">CEBAS (Certificação de Entidades Beneficentes de Assistência Social)</p>
+                    <p class="dcc">É o reconhecimento oficial do Governo Federal que comprova o impacto social e a seriedade dos nossos atendimentos gratuitos. Essa certificação valida publicamente a transparência e a excelência da ONG, funcionando como um selo de confiança que fortalece nossa missão de promover a inclusão social e garantir os direitos de quem mais precisa.</p>
+                </div>
+            </div>
+
+            
+            <div class="box-certificacoes">
+                <div class="image_certificacoes efeito-subir">
+                    <img src="images/Reconhecimentos/Utilidade_Publica_ Estadual.jpeg" alt="Utilidade Pública Estadual">
+                </div>
+                <div class="certificacoes_tipo efeito-subir">
+                    <p class="stg">Declaração de Utilidade Pública Estadual (Lei nº 10.881/2025)</p>
+                    <p class="dcc">É o reconhecimento oficial concedido pelo Governo do Estado do Rio de Janeiro que chancela a relevância e a idoneidade das nossas atividades em âmbito estadual. Essa titulação comprova que os serviços gratuitos prestados pela ONG são essenciais para a sociedade, ampliando nossa credibilidade institucional e abrindo portas para a celebração de convênios, parcerias e recebimento de recursos públicos estaduais.</p>
+                </div>
+            </div>
+
+            
+            <div class="box-certificacoes">
+                <div class="image_certificacoes efeito-subir">
+                    <img src="images/Reconhecimentos/Utilidade_Publica_Municipal.jpg" alt="Utilidade Pública Municipal">
+                </div>
+                <div class="certificacoes_tipo efeito-subir">
+                    <p class="stg">Declaração de Utilidade Pública Municipal (Lei nº 4.963/2022)</p>
+                    <p class="dcc">É a certificação oficial concedida pela Prefeitura e pela Câmara Municipal de Macaé que reconhece o valor indispensável dos nossos serviços para a comunidade local. Esse título valida publicamente a seriedade e o impacto direto dos nossos atendimentos gratuitos na cidade, funcionando como uma credencial essencial que habilita a ONG a receber auxílios, subvenções e firmar parcerias com o poder público municipal.</p>
+                </div>
+            </div>
+            
+            
+            <div class="box-certificacoes">
+                <div class="image_certificacoes efeito-subir">
+                    <img src="images/Reconhecimentos/Indicacao_BERA.png" alt="Equipamento BERA (2024)">
+                </div>
+                <div class="certificacoes_tipo efeito-subir">
+                    <p class="stg">Indicação Legislativa para Aquisição de Equipamento BERA (2024)</p>
+                    <p class="dcc">Trata-se de uma proposição oficial apresentada ao Poder Executivo Municipal que reconhece a nossa ONG como o polo ideal e de utilidade pública para receber o equipamento avançado BERA (audiometria de tronco encefálico). A iniciativa destaca o papel crucial e pioneiro da instituição na triagem especializada e na viabilização do diagnóstico precoce gratuito para crianças da comunidade que não possuem plano de saúde.</p>
+                </div>
+            </div>
+
+            <div class="box-certificacoes">
+                <div class="image_certificacoes efeito-subir">
+                    <img src="images/Reconhecimentos/Mocao_aplausos.png" alt="Moção de Aplausos">
+                </div>
+                <div class="certificacoes_tipo efeito-subir">
+                    <p class="stg">Moção de Aplausos (Câmara Municipal de Macaé - 2023)</p>
+                    <p class="dcc">É uma honraria oficial concedida pelo Poder Legislativo de Macaé em reconhecimento público e gratidão pelo relevante trabalho executado pela nossa ONG. Esta homenagem chancela a atuação exemplar da instituição na promoção da conscientização sobre o autismo, no acolhimento familiar e no desenvolvimento de ações efetivas para a construção de uma sociedade mais inclusiva e igualitária na região.</p>
+                </div>
+            </div>
+
+            <div class="box-certificacoes">
+                <div class="image_certificacoes efeito-subir">
+                    <img src="images/Reconhecimentos/CMDCA.jpg" alt="CMDCA">
+                </div>
+                <div class="certificacoes_tipo efeito-subir">
+                    <p class="stg">CMDCA (Conselho Municipal dos Direitos da Criança e do Adolescente)</p>
+                    <p class="dcc">É a certificação oficial que atesta a plena regularidade e a conformidade da nossa ONG com o Estatuto da Criança e do Adolescente (ECA) em âmbito municipal. Esse registro valida publicamente a qualidade e a segurança das nossas ações voltadas para a proteção e o desenvolvimento infantojuvenil, atuando como um requisito indispensável e transparente para a captação de recursos via Fundos da Infância, além de viabilizar parcerias governamentais que fortalecem nossa atuação local</p>
+                </div>
+            </div>
+
+            <div class="box-certificacoes">
+                <div class="image_certificacoes efeito-subir">
+                    <img src="images/Reconhecimentos/COMAS.jpg" alt="COMAS">
+                </div>
+                <div class="certificacoes_tipo efeito-subir">
+                    <p class="stg">COMAS (Conselho Municipal de Assistência Social)</p>
+                    <p class="dcc">É a habilitação oficial em âmbito municipal que reconhece a nossa ONG como uma instituição legítima da rede de proteção social local. Esse registro comprova a regularidade das nossas atividades gratuitas perante o município, sendo uma credencial indispensável e transparente para a captação de recursos públicos locais, celebração de termos de parceria e participação ativa nas deliberações sobre as políticas de assistência social da nossa região.</p>
+                </div>
+            </div>
+
+            <div class="box-certificacoes">
+                <div class="image_certificacoes efeito-subir">
+                    <img src="images/Reconhecimentos/cneas.png" alt="CNEAS">
+                </div>
+                <div class="certificacoes_tipo efeito-subir">
+                    <p class="stg">CNEAS (Cadastro Nacional de Entidades de Assistência Social)</p>
+                    <p class="dcc">É o registro oficial que integra a nossa ONG à rede socioassistencial regulamentada do país, comprovando que estamos em pleno alinhamento com as diretrizes do Sistema Único de Assistência Social (SUAS). Esse cadastro valida publicamente a existência e a regularidade dos nossos serviços gratuitos, funcionando como um requisito obrigatório e transparente para que a instituição possa firmar parcerias públicas, receber recursos e consolidar seu impacto na sociedade.</p>
+                </div>
+            </div>
+
+             <div class="box-certificacoes">
+                <div class="image_certificacoes efeito-subir">
+                    <img src="images/Reconhecimentos/cnes.png" alt="CNES">
+                </div>
+                <div class="certificacoes_tipo efeito-subir">
+                    <p class="stg">CNES (Cadastro Nacional de Estabelecimentos de Saúde)</p>
+                    <p class="dcc">É o registro oficial do Ministério da Saúde que formaliza a nossa ONG como um estabelecimento de saúde qualificado e regularizado. Esse cadastro mapeia nossa capacidade de atendimento, profissionais especializados e infraestrutura disponível, sendo um requisito indispensável e transparente para garantir a legitimidade das nossas terapias, integrar a ONG às políticas públicas de saúde e viabilizar convênios que fortalecem nossa atuação.</p>
+                </div>
+            </div>
         </div>
     </section>
 

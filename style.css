@@ -324,8 +324,220 @@ hr {
 
 /*Página de Inscrição*/
 
+#view-inscricao {
+    width: 100%;
+    background-color: #f4f5f7; 
+}
+
+/* Div Pai Maior que gerencia o alinhamento e o Wrap inteligente */
+.flex-formularios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+    padding: 6rem 10% 8rem 10%;
+    max-width: 150rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Cada bloco contendo o Título, Parágrafo e Formulário */
+.bloco-form {
+    flex: 1 1 500px; 
+    width: 100%;
+}
+
+.bloco-form h2 {
+    font-size: 3.2rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.bloco-form p {
+    font-size: 1.6rem;
+    color: #6b7280;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+.formulario-ong {
+    background: #ffffff;
+    padding: 4rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.grupo-formulario-row {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 1; 
+}
+
+.campo-formulario label {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.campo-formulario input {
+    width: 100%;
+    padding: 1.1rem 1.6rem;
+    font-size: 1.6rem;
+    border: 0.10rem solid #8e96a2;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de foco azul ao selecionar o campo */
+.campo-formulario input:focus {
+    outline: none;
+    border-color: #286ab1;
+    box-shadow: 0 0 0 4px rgba(0, 86, 179, 0.15);
+}
+
+/* Customização do Placeholder */
+.campo-formulario input::placeholder {
+    color: #bbc2ce;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+/* Botão de Enviar Estilo ONG */
+.btn-enviar-formulario {
+    align-self: flex-start;
+    background-color: #ffcc00; /* Amarelo Ouro */
+    color: #1f2937;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.4rem 4rem;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 1.5rem;
+}
+
+.btn-enviar-formulario:hover {
+    background-color: #e6b800;
+}
+
+.btn-enviar-formulario:active {
+    transform: scale(0.98);
+}
+
+/* --- AJUSTES DE RESPONSIVIDADE PARA TELA DE CELULAR --- */
+@media (max-width: 768px) {
+    .flex-formularios-container {
+        padding: 4rem 5%;
+        gap: 6rem; /* Aumenta a distância vertical entre os dois blocos quando empilhados */
+    }
+
+    .formulario-ong {
+        padding: 2.5rem; /* Menos recuo interno em telas pequenas */
+    }
+
+    /* Quebra os campos duplos de uma linha para virarem colunas únicas no celular */
+    .grupo-formulario-row {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .btn-enviar-formulario {
+        width: 100%; /* Botão ganha largura total no mobile */
+        text-align: center;
+    }
+}
 
 
+/*Página de Prêmios e Certificações*/
+
+.box-certificacoes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6rem;
+    width: 100%;
+    text-align: start;
+    padding: 2rem 0;
+}
+
+.image_certificacoes {
+    flex: 1;
+    max-width: 30rem;
+    display: flex;
+    justify-content: center;
+}
+
+.box-certificacoes img {
+    width: 100%;
+    height: auto;
+    border-radius: 0; 
+    display: block;
+}
+
+.certificacoes_tipo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-certificacoes .stg {
+    font-size: 2.8rem !important;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+/* A linha amarela decorativa abaixo do título */
+.box-certificacoes .stg::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10rem;
+    height: 0.3rem;
+    background-color: #ff5722; 
+}
+
+.dcc {
+    font-size: 1.6rem;  
+    line-height: 1.7;
+    color: #4b5563;
+    margin-top: 1.5rem;
+}
+
+/* --- Responsividade para Celulares --- */
+@media (max-width: 768px) {
+    .box-certificacoes {
+        flex-direction: column; /* Empilha a imagem acima do texto no mobile */
+        text-align: center;
+        gap: 4rem;
+    }
+
+    .container-premios h2 {
+        text-align: center;
+    }
+
+    .box-certificacoes .stg::after {
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza a linha amarela no celular */
+    }
+}
 
 /*Página de Notícias*/
 
