@@ -335,7 +335,7 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10rem;
-    padding: 6rem 10% 8rem 10%;
+    padding: 0rem 10% 8rem 10%;
     max-width: 150rem;
     width: 100%;
     margin: 0 auto;
@@ -462,6 +462,10 @@ hr {
 
 /*Página de Prêmios e Certificações*/
 
+.container-ctf{
+    padding: 0 2% 8rem 2%;
+}
+
 .box-certificacoes {
     display: flex;
     align-items: center;
@@ -563,8 +567,355 @@ hr {
     margin-top: 3rem;
 }
 
+#view-noticias p {
+    color: #6b7280;
+}
 
 
+/*Página de Fale Conosco*/
+
+#view-fale-conosco {
+    width: 100%;
+    background-color: #f4f5f7;
+}
+
+.container-fale-conosco {
+    max-width: 140rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem 10% 17.4rem 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.topo-contato h2 {
+    text-transform: uppercase;
+    color: #1f2937;
+    text-align: center;
+}
+
+.topo-contato p {
+    font-size: 1.6rem;
+    color: #6b7280;
+    text-align: center;
+}
+
+/* Grade que segura os 4 canais lado a lado */
+.corpo-canais-atendimento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+}
+
+/* Os Cards Individuais de Contato */
+.card-canal-contato {
+    background: #ffffff;
+    padding: 4rem 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    flex: 1 1 250px; /* Divide o espaço em 4 colunas e quebra se a tela encolher */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito sutil ao passar o mouse por cima do card */
+.card-canal-contato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-canal-contato strong {
+    font-size: 1.8rem;
+    color: #1f2937;
+}
+
+.card-canal-contato p {
+    font-size: 1.5rem;
+    color: #4b5563;
+    margin: 0;
+}
+
+.link-canal {
+    color: #286ab1; /* Azul padrão da logo */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.link-canal:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+.icone-rede {
+    width: 6rem;
+    height: 6rem;
+    background-color: #f3f4f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.8rem; /* Tamanho interno da logo */
+    transition: background-color 0.3s ease;
+}
+
+/* Ao passar o mouse no card, a logo ganha um destaque de cor */
+.card-canal-contato:hover .icone-rede {
+    background-color: #fff9db; /* Fundo amarelo clarinho combinando com a ONG */
+}
+
+/* Logo do WhatsApp injetada por SVG no CSS */
+.icone-whatsapp {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%2325D366' d='M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z'/%3E%3C/svg%3E");
+}
+
+/* Logo do Instagram injetada por SVG no CSS */
+.icone-instagram {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23E1306C' d='M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.9c-41.4 0-75-33.6-75-75s33.6-75 75-75 75 33.6 75 75-33.5 75-75 75zm166.2-210.3c0 14.9-12.1 27-27 27s-27-12.1-27-27 12.1-27 27-27 27 12.1 27 27zm57.4 50.8c-1.5-32.9-9-62-33.1-86.1-24.1-24.1-53.2-31.6-86.1-33.1-33.9-1.9-135.9-1.9-169.8 0-32.9 1.5-62 9-86.1 33.1-24.1 24.1-31.6 53.2-33.1 86.1-1.9 33.9-1.9 135.9 0 169.8 1.5 32.9 9 62 33.1 86.1 24.1 24.1 53.2 31.6 86.1 33.1 33.9 1.9 135.9 1.9 169.8 0 32.9-1.5 62-9 86.1-33.1 24.1-24.1 31.6-53.2 33.1-86.1 1.9-33.9 1.9-135.9 0-169.8zM401 369c-7.4 19.5-22.4 34.5-42 42-26.2 10.4-88.5 8-119.8 8s-93.6 2.4-119.8-8c-19.5-7.4-34.5-22.4-42-42-10.4-26.2-8-88.5-8-119.8s-2.4-93.6 8-119.8c7.4-19.5 22.4-34.5 42-42 26.2-10.4 88.5-8 119.8-8s93.6-2.4 119.8 8c19.5 7.4 34.5 22.4 42 42 10.4 26.2 8 88.5 8 119.8s2.4 93.6-8 119.8z'/%3E%3C/svg%3E");
+}
+
+/* Ícone de Pin/Endereço injetado por SVG no CSS */
+.icone-endereco {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='%23ef4444' d='M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z'/%3E%3C/svg%3E");
+}
+
+/* Ícone de Envelope/E-mail injetado por SVG no CSS */
+.icone-email {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%231f2937' d='M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z'/%3E%3C/svg%3E");
+}
+
+/* --- AJUSTES DE RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .container-fale-conosco {
+        padding: 12rem 5% 6rem 5%;
+        gap: 4rem;
+    }
+
+    .topo-contato h2, .topo-contato p {
+        text-align: center; /* Centraliza o cabeçalho no celular */
+    }
+    
+    .card-canal-contato {
+        padding: 3rem 2rem; /* Compacta levemente o card no mobile */
+    }
+}
+
+/*Página de Doe Agora*/
+
+#view-doe-agora {
+    width: 100%;
+    background-color: #f4f5f7;
+}
+
+.container-doe-agora {
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10% 8rem 10%;
+}
+
+.container-doe-agora h2 {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.subtitulo-doe {
+    font-size: 1.6rem;
+    color: #6b7280;
+    margin-bottom: 4rem;
+}
+
+/* Cartão mestre da Doação */
+.box-doacao-card {
+    background: #ffffff;
+    padding: 4rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+.info-pix, .info-bancaria {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.info-pix h3, .info-bancaria h3 {
+    font-size: 2.4rem;
+    color: #1f2937;
+}
+
+.info-pix p, .info-bancaria p {
+    font-size: 1.5rem;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* --- PRIMEIRA MODIFICAÇÃO: CONTAINER DO QR CODE VIA BACKGROUND-IMAGE --- */
+.qrcode-container {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+.qrcode-imagem-bg {
+    width: 18rem;
+    height: 18rem;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 1rem;
+    background-image: url('images/CEPIS\ QR\ COde.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Garante que o QR code apareça inteiro sem cortes */
+}
+
+/* Chave PIX */
+.chave-pix-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.chave-pix-container strong {
+    font-size: 1.5rem;
+    color: #3a414b;
+}
+
+.chave-copia-linha input {
+    width: 100%;
+    max-width: 30rem;
+    padding: 1rem 1.4rem;
+    font-size: 1.6rem;
+    border: 0.15rem solid #c3c9d2;
+    border-radius: 0.7rem;
+    background-color: #f9fafb;
+    color: #1f2937;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- SEGUNDA MODIFICAÇÃO: ESTILIZAÇÃO DO BLOCO COMPLEMENTAR APOIA.SE --- */
+.bloco-apoia-se {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    background-color: #f8fafc; /* Um fundo sutil para diferenciar do PIX */
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bloco-apoia-se strong {
+    font-size: 1.6rem;
+    color: #1f2937;
+}
+
+.bloco-apoia-se p {
+    font-size: 1.4rem;
+    color: #6b7280;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.btn-apoia-se {
+    align-self: flex-start;
+    background-color: #286ab1; /* Azul corporativo da logo da ONG */
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    border-radius: 0.6rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.btn-apoia-se:hover {
+    background-color: #0056b3;
+}
+
+.btn-apoia-se:active {
+    transform: scale(0.98);
+}
+
+/* Lista Bancária */
+.dados-banco-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: #f9fafb;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-left: 4px solid #286ab1;
+}
+
+.dados-banco-lista li {
+    font-size: 1.5rem;
+    color: #4b5563;
+}
+
+.dados-banco-lista strong {
+    color: #1f2937;
+}
+
+/* Caixa de aviso de segurança */
+.aviso-transparencia {
+    margin-top: auto;
+    padding: 1.5rem;
+    background-color: #fffbeb;
+    border: 1px solid #fef3c7;
+    border-radius: 0.8rem;
+    color: #b45309;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+/* --- RESPONSIVIDADE CELULAR --- */
+@media (max-width: 768px) {
+    .container-doe-agora {
+        padding: 12rem 5% 6rem 5%;
+    }
+
+    .container-doe-agora h2, .subtitulo-doe {
+        text-align: center;
+    }
+
+    .box-doacao-card {
+        padding: 2.5rem;
+        gap: 5rem;
+    }
+
+    .qrcode-container {
+        justify-content: center;
+    }
+
+    .chave-copia-linha input {
+        max-width: 100%;
+    }
+
+    .btn-apoia-se {
+        width: 100%; /* Botão ocupa toda a largura no celular */
+        align-self: center;
+    }
+}
 
 footer {
     padding: 2rem;
@@ -682,3 +1033,27 @@ footer {
         transform: rotate(-45deg) translate(7px, -7px);
     }
 }
+
+
+/* Estado Inicial: Oculto, ligeiramente deslocado para baixo (50px) e transparente */
+.efeito-subir {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.2s cubic-bezier(0.215, 0.610, 0.355, 1), 
+                transform 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    will-change: transform, opacity;
+}
+
+/* Estado Ativo: Visível, retorna à sua posição de origem */
+.efeito-subir.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delays opcionais automáticos para criar efeito cascata em elementos filhos */
+.cascata-delay-1 { transition-delay: 0.15s; }
+.cascata-delay-2 { transition-delay: 0.3s; }
+.cascata-delay-3 { transition-delay: 0.45s; }
+.cascata-delay-4 { transition-delay: 0.6s; }
+.cascata-delay-5 { transition-delay: 0.75s; }
+.cascata-delay-6 { transition-delay: 1s; }
